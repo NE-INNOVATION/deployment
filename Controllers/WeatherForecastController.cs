@@ -26,7 +26,7 @@ namespace Deployment.Controllers
         [HttpGet()]
         public IActionResult Health()
         {
-            return Ok();
+            return Ok(Summaries);
         }
 
         [HttpGet("Error")]

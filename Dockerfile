@@ -9,6 +9,9 @@ RUN dotnet restore -s https://api.nuget.org/v3/index.json --packages packages --
 COPY . ./
 RUN dotnet publish -c Release -o out
 
+# Install dotnet dump tool
+RUN dotnet tool install --global dotnet-dump
+
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app

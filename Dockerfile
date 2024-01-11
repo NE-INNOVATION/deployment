@@ -1,24 +1,21 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
-
-USER root
-
 WORKDIR /app
 
-# Copy csproj and restore as distinct layers
 COPY *.csproj ./
 RUN dotnet restore -s https://api.nuget.org/v3/index.json --packages packages --ignore-failed-sources
 
-# Copy everything else and build
 COPY . ./
 RUN dotnet publish -c Release -o out
 
 # Install dotnet dump tool
 RUN dotnet tool install --global dotnet-dump
 
-# Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 COPY --from=build-env /app/out .
+
+# Add the following lines to grant root permissions
+USER root
 
 LABEL io.k8s.display-name="app name" \
       io.k8s.description="container description..." \

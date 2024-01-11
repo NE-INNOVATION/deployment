@@ -6,6 +6,7 @@
   </PropertyGroup>
 
 
+
 <ItemGroup>
   <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
 </ItemGroup>
@@ -13,16 +14,16 @@
   <Content Include="dotnet-tools\dotnet-dump">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
   </Content>
-  <Content Include="dotnet-tools\dotnet-dump (1)">
+  <Content Include="dotnet-tools\dotnet-dump1">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
   </Content>
-  <Content Include="dotnet-tools\dotnet-dump (2)">
+  <Content Include="dotnet-tools\dotnet-dump2">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
   </Content>
-  <Content Include="dotnet-tools\dotnet-dump (3)">
+  <Content Include="dotnet-tools\dotnet-dump3">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
   </Content>
-  <Content Include="dotnet-tools\dotnet-dump (4)">
+  <Content Include="dotnet-tools\dotnet-dump4">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
   </Content>
 </ItemGroup>

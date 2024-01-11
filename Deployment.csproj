@@ -5,32 +5,26 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="dotnet-tools\dotnet-dump" />
-    <None Remove="dotnet-tools\dotnet-dump %281%29" />
-    <None Remove="dotnet-tools\dotnet-dump %282%29" />
-    <None Remove="dotnet-tools\dotnet-dump %283%29" />
-    <None Remove="dotnet-tools\dotnet-dump %284%29" />
-  </ItemGroup>
+
 <ItemGroup>
   <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
 </ItemGroup>
 <ItemGroup>
-  <Resource Include="dotnet-tools\dotnet-dump">
+  <Content Include="dotnet-tools\dotnet-dump">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-  </Resource>
-  <Resource Include="dotnet-tools\dotnet-dump (1)">
+  </Content>
+  <Content Include="dotnet-tools\dotnet-dump (1)">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-  </Resource>
-  <Resource Include="dotnet-tools\dotnet-dump (2)">
+  </Content>
+  <Content Include="dotnet-tools\dotnet-dump (2)">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-  </Resource>
-  <Resource Include="dotnet-tools\dotnet-dump (3)">
+  </Content>
+  <Content Include="dotnet-tools\dotnet-dump (3)">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-  </Resource>
-  <Resource Include="dotnet-tools\dotnet-dump (4)">
+  </Content>
+  <Content Include="dotnet-tools\dotnet-dump (4)">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-  </Resource>
+  </Content>
 </ItemGroup>
 
 </Project>
